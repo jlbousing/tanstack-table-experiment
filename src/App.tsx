@@ -1,9 +1,11 @@
 import { BasicTable } from "./components/BasicTable";
+import { GlobalFiltering } from "./components/GlobalFiltering";
 
 function App() {
   return (
     <div className="App">
-      <BasicTable/>
+      {/* <BasicTable/> */}
+      <GlobalFiltering />
     </div>
   );
 }
