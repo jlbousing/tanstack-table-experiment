@@ -6,12 +6,9 @@ export const columnDef = [
     header: "Header Id",
   },
   {
-    accessorKey: "firstName",
-    header: "First Name",
-  },
-  {
-    accessorKey: "lastName",
-    header: "Last Name",
+    accessorFn: (row: { firstName: any; lastName: any }) =>
+      `${row.firstName} ${row.lastName}`,
+    header: "Name",
   },
   {
     accessorKey: "email",
